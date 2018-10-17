@@ -1,0 +1,119 @@
+@charset "utf-8";
+/*通用部分 */
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,fieldset,form,lengend,button,input,textarea,th,td,div{margin:0;padding:0}
+body{color: #333;font-size:12px;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+address,cite,dfn,em,var,i{font-style:normal}
+code,kbd,pre,samp,tt{font-family:"Courier New",Courier,monospace}
+small{font-size:12px}
+ul,ol{list-style:none}
+legend{color:#000}
+fieldset,img{border:0}
+/*input,textarea{ border: 0;outline:none;margin:0;padding:0;font-family: inherit;}*/
+input,textarea{ border:1px solid #cecece;outline:none;margin:0;padding:0;font-family: inherit;}
+table{border-collapse:collapse;border-spacing:0}
+img{vertical-align:top; border:none;}
+.clearfix:before,.clearfix:after{content:"";display:table}
+.clearfix:after{clear:both}
+.clearfix{zoom:1}
+.clear_float:after {display: block;visibility: hidden;height: 0;clear: both;content: "";}
+.clear_float {display: inline-block; zoom:1;}
+* html .clear_float {zoom: 1;}
+.clear_float {display: block;}
+.clear{ clear:both;}
+.fl{float:left;}
+.fr{float:right;}
+.pr{position:relative}
+.dis{display:block}
+.undis{display:none}
+.iblk{ display:inline-block;}
+.ellipsis{overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;white-space:nowrap;word-break:keep-all;word-wrap:normal}
+.vm{ vertical-align:middle;}
+.al{ text-align:left;}
+textarea{resize:none}
+a:link{outline:0;color:#333;text-decoration:none}
+a:visited{color:#333;text-decoration:none}
+a:hover,a:active{color:#333;text-decoration:underline}
+a:focus{outline:0}
+a.alink, a.alink:visited{text-decoration:underline;}
+.fm{font-family: "微软雅黑",arial,Simsun,sans-serif;}
+
+.comWidth{min-width:980px;max-width:1190px;width:100%;margin:0 auto;}
+.cWhite,.cWhite:visited,.cWhite a{color:#fff}
+.cblue,.cblue a,a.cblue,a.cblue:hover{color:#4F4FFF}
+.cRed,.cRed:visited,.cRed a{color:Red;}
+.cDRed,.cDRed:visited,.cDRed a{color:#c91e3a;}
+.cERed{color:#e83907;}
+.cFRed{color:#be0f34;}
+.cGRed{color:#c30525;}
+.cYellow,.cYellow:visited,.cYellow a{color:#f60}
+.cGray{color:#9e9e9e;}
+.mt5{margin-top:5px;}
+.mt15{margin-top:15px;}
+.mt10{margin-top:10px;}
+.mt20{margin-top:20px;}
+.mt30{margin-top:30px;}
+.mt50{margin-top:50px;}
+.mb10{margin-bottom:10px;}
+.mb15{margin-bottom:15px;}
+.mb30{margin-bottom:30px;}
+.mb50{margin-bottom:50px;}
+.pd20{padding:20px;}
+.pdb20{padding-bottom:20px;}
+.pdleft5{padding-left:5px;}
+.hr25{ height:25px; clear:both;}
+
+.fz30{font-size:30px;}
+.fz24{font-size:24px;}
+.fz20{font-size:20px;}
+.fz18{font-size:18px;}
+.fz16{font-size:18px;}
+.fz14{font-size:14px;}
+.fz12{font-size:12px;}
+
+.lh24{line-height:24px;}
+.lh32{line-height:32px;}
+.fb{ font-weight:bold;}
+.border{border:1px solid #ececeb;}
+.brd{border:1px solid #ddd; }
+.noborder{border:none;}
+.txc,.center{ text-align:center}
+table {border-collapse: collapse; border-spacing: 0px;empty-cells: show;color: inherit;}
+/*公关底部 */
+.footer{margin-top:5px; color:#2b2929;font-size:13px;clear:both;}
+.footer-top{ background:#bfbfbf; height:48px;line-height:48px;padding:0 20px 0px}
+.footerPhone{ float:left; }
+.footer-link{ float:right;}
+
+.footer-txt{line-height:24px; float:left;}
+.footer-validate{float:right; }
+
+/*右侧固定黑色侧边栏*/
+#sidebar {padding-top: 100px; width: 32px;position:fixed; _position: absolute;right: 0;top:0;background-color: #444;min-height: 100%;z-index: 999999;color:#fff;overflow:visible;}
+.inner{color:#fff; font-family:"Microsoft Yahei","微软雅黑","宋体";}
+.sidebarTab-masks{ background-color:#444;width:32px;}
+.myself,.shopCar,.share,.suggest,.ask,#goTop{background-image:url(../images/icon/sideBar.png); background-repeat:no-repeat;display:block;width:32px; height:32px; position:relative;cursor:pointer;text-align:center;margin-top:16px;}
+.sidebarTab-sign{ height:150px;width: 32px; text-align:center; background:#c30626; top:150px;  }
+.sidebarTab-sign .txt{ display:block;  line-height:16px; overflow:hidden;padding-left:5px;*padding-left:0px;padding-top:40px;width:20px; font-size:18px;line-height:20px;}
+.sidebarTab-sign .txt a,.sidebarTab-sign .txt a:visited{ color:#fff;}
+.sidebarTab-sign .txt a:hover{color:#fff; text-decoration:none;}
+.myself{ background-position:3px -16px;}
+.shopCar{background-position:3px -64px;}
+.share{background-position:3px -112px;}
+.suggest{background-position:3px -162px;}
+.ask{background-position:3px -209px;}
+#goTop{background-position:3px -271px;margin-top:40px; }
+
+.active{background-color:#c30626; }
+.sidebarTab-tip{position:absolute;right:35px;top:-1px;width:90px;height:35px;line-height:35px;text-align:center;color:#fff;background-color:#494949;-webkit-box-shadow:0 0 5px rgba(0,0,0,.2);-moz-box-shadow:0 0 5px rgba(0,0,0,.2);box-shadow:0 0 5px rgba(0,0,0,.2);display:none;}
+.sidebarTab-tip-arr {top:10px;right:-8px;color:#494949}
+.sidebar-mbar-arr {position:absolute;width:16px;height:16px;line-height:16px;text-align:center;font-size:16px;font-family:"\5b8b\4f53"}
+
+
+
+
+/* 面包屑 */
+.navigation{font-size:14px; margin-bottom:15px; margin-top:15px; text-indent:10px;}
+.navigation em{font-style:normal;}
+.navigation a:hover{ text-decoration:underline;}
+}
